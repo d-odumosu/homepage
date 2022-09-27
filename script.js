@@ -1,3 +1,34 @@
+var stories;
+
+
+stories = ['Africa of proud warriors in ancestral Savannahs', 'Africa of whom my grandmother sings', 'On the banks of the distant river', 'I have never known you', 'But your blood flows in my veins', 'Your beautiful black blood that irrigates the fields', 'The blood of your sweat', 'The sweat of your work', 'The work of your slavery', 'Africa, tell me Africa', 'Is this your back that is unbent', 'This back that never breaks under the weight of humiliation', 'This back trembling with red scars', 'And saying no to the whip under the midday sun?', 'But a grave voice answers me', 'Impetuous child that tree, young and strong', 'That tree over there', 'Splendidly alone amidst white and faded flowers', 'That is your Africa springing up anew', 'springing up patiently, obstinately', 'Whose fruit bit by bit acquires', 'The bitter taste of liberty.'];
+
+'Africa my Africa';
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  if (!!stories.length) {
+    let new_ol = document.createElement('ol');
+    new_ol.innerText = stories.shift();
+    new_ol.style.color = '#cc33cc';
+
+    element_list.appendChild(new_ol);
+  }
+
+});
+
+document.getElementById('speak').addEventListener('click', (event) => {
+  window.speechSynthesis.speak(new SpeechSynthesisUtterance(stories.shift()));
+
+});
+
+document.getElementById('restart').addEventListener('click', (event) => {
+  let element_list2 = document.getElementById('list');
+  element_list2.replaceChildren();
+
+});
+
 var images;
 
 
@@ -19,5 +50,3 @@ document.getElementById('next').addEventListener('click', (event) => {
   element_carousel3.setAttribute("src", images[0]);
 
 });
-
-
