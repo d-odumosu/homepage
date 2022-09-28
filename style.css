@@ -95,6 +95,12 @@ p{
 .shop{
     padding: 0.2rem;
 }
+.btn-shop{
+    background-color: #bc6c25;
+    color: #fefae0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.9rem;
+}
 
 .c-site-footer{
 padding: 2rem;
