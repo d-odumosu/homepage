@@ -101,6 +101,9 @@ p{
     padding: 0.5rem 1rem;
     border-radius: 0.9rem;
 }
+.to-do{
+    width: 50%;
+}
 
 .c-site-footer{
 padding: 2rem;
