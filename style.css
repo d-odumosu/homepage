@@ -88,7 +88,12 @@ p{
 .booklist{
     display: flex;
       padding: 1rem;
+      margin-right: 2rem;
 
+
+}
+.shop{
+    padding: 0.2rem;
 }
 
 .c-site-footer{
