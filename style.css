@@ -84,6 +84,8 @@ p{
 }
 .booklist{
     display: flex;
+      padding: 1rem;
+
 }
 
 .c-site-footer{
