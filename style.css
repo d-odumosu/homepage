@@ -82,6 +82,9 @@ p{
     color: #6d6875;
 
 }
+.booklist{
+    display: flex;
+}
 
 .c-site-footer{
 padding: 2rem;
