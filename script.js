@@ -50,3 +50,35 @@ document.getElementById('next').addEventListener('click', (event) => {
   element_carousel3.setAttribute("src", images[0]);
 
 });
+
+
+var todo;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+todo = [];
+
+
+document.getElementById('btn-todo').addEventListener('click', (event) => {
+  todo.unshift(getNumberOrString(document.getElementById('text').value));
+  let element_list_todo = document.getElementById('list-todo');
+  let new_li = document.createElement('li');
+  new_li.innerText = getNumberOrString(document.getElementById('text').value);
+
+  element_list_todo.appendChild(new_li);
+
+});
+
+document.getElementById('list-todo').addEventListener('click', (event) => {
+  event.target.replaceChildren();
+
+});
