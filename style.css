@@ -23,7 +23,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #b08968;
+    background-color: #f5ebe0;
     min-height: 5rem;
     margin-bottom: 2rem;
 }
@@ -37,7 +37,7 @@ list-style: none;
 
 .nav-links a{
     text-decoration: none;
-    color: white;
+    color: #6c584c;
     font-weight: 500;
     letter-spacing: 2px;
 }
@@ -147,6 +147,13 @@ h3{
     background-color: #ede0d4;
     padding: 10px 20px;
     border-radius: 20px;
+}
+.red{
+    color: red;
+}
+.white{
+    color: white;
+    background-color: black;
 }
 .c-site-footer{
 padding: 2rem;
