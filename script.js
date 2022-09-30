@@ -73,12 +73,16 @@ document.getElementById('btn-todo').addEventListener('click', (event) => {
   let element_list_todo = document.getElementById('list-todo');
   let new_li = document.createElement('li');
   new_li.innerText = getNumberOrString(document.getElementById('text').value);
+  new_li.style.backgroundColor = '#ff0000';
+  new_li.style.color = '#ffffff';
 
   element_list_todo.appendChild(new_li);
 
 });
 
 document.getElementById('list-todo').addEventListener('click', (event) => {
-  event.target.replaceChildren();
+  event.target.style.backgroundColor = '#ffffff';
+  event.target.style.color = '#000000';
 
 });
+
